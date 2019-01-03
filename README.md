@@ -1,6 +1,6 @@
-#SASS Test
+# SASS Test
 This is me trying out SASS (but mainly testing out GitHub!)
-##Done
+## Done
 - Created local repo
 - Installed Git on mac
 - Tested out command lines
