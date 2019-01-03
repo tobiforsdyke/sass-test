@@ -7,7 +7,7 @@ This is me trying out SASS (but mainly testing out GitHub!)
 - Tried using Git from inside Atom
 - Committed and Pushed files from command line and Atom
 
-Before starting tests open Terminal and navigate to the correct folder then type:
+**Before starting tests open Terminal and navigate to the correct folder then type:**
 
 ```
 sass --watch style.scss:output.css
