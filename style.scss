@@ -1,3 +1,9 @@
+// Variables
+$primary-col: blue;
+$secondary-col: red;
+$border-width: 4px;
+
+// Classes
 .first-class {
   color: #f00;
   font-family: sans-serif;
@@ -6,18 +12,26 @@
 
 .second-class {
   @extend .first-class;
-  border-color: #fff;
+  border-color: $primary-col;
+  border-width: $border-width;
 }
 
-.third-class {
-  @extend .first-class;
-  background-color: #f0f0f0;
+a {
+  font-family: sans-serif; color: $primary-col;
+  &:hover,
+  &:focus,
+  &:visited { color: $secondary-col; }
+  &.another-class { color: $secondary-col;
+    &:hover,
+    &:focus,
+    &:visited { color: $secondary-col; }
+  }
 }
 
-.fourth-class {
-  @extend .first-class;
-  background-color: #f0f0f0;
-}
-
-// Comment
-// Another comment
+// a:hover, a:focus, a:visited {
+//   color: $primary-col;
+// }
+// a.link-class {
+//   font-family: sans-serif;
+//   color: $secondary-col;
+// }
